@@ -1,4 +1,4 @@
-import { pipeline } from '@xenova/transformers';
+import { pipeline } from '@huggingface/transformers';
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -26,7 +26,7 @@ for (const v of verbetes) {
 }
 
 console.log(`Carregando modelo ${MODEL}...`);
-const embed = await pipeline('feature-extraction', MODEL, { quantized: true });
+const embed = await pipeline('feature-extraction', MODEL, { dtype: 'q8' });
 
 const enriched = [];
 for (const v of verbetes) {
