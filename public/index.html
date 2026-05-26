@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Boca do Povo — acervo de ditados brasileiros</title>
+    <meta
+      name="description"
+      content="Enciclopédia de ditados, gírias e expressões populares brasileiras catalogados pela intenção do que se quer dizer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <h1 class="marca">Boca do Povo</h1>
+      <p class="subtitulo">
+        Acervo de ditados, provérbios e expressões populares brasileiras, catalogados pela
+        intenção do que se quer dizer.
+      </p>
+    </header>
+
+    <main class="conteudo">
+      <section class="busca">
+        <label for="q" class="busca-rotulo">Descreva o que você quer dizer</label>
+        <input
+          id="q"
+          type="text"
+          class="busca-input"
+          placeholder="ex.: quero dizer que tô garantindo a minha antes de pensar nos outros"
+          autocomplete="off"
+          autofocus
+          disabled
+        />
+        <p id="status" class="busca-status">Carregando o acervo…</p>
+      </section>
+
+      <section id="resultados" class="resultados" aria-live="polite"></section>
+
+      <section id="abertura" class="abertura">
+        <p>
+          Não busca pela gíria — busca pela <em>intenção</em>. Diga o que você quer expressar e
+          o acervo te devolve as expressões que cabem ali, com origem, exemplos de uso e
+          equivalentes em outras línguas quando existir.
+        </p>
+        <p class="abertura-pista">Algumas intenções para experimentar:</p>
+        <ul class="abertura-sugestoes">
+          <li><button type="button" data-q="alguém que faz muito barulho mas não age">alguém que faz muito barulho mas não age</button></li>
+          <li><button type="button" data-q="o especialista que negligencia justo o que domina">o especialista que negligencia justo o que domina</button></li>
+          <li><button type="button" data-q="progresso lento e constante">progresso lento e constante</button></li>
+          <li><button type="button" data-q="é preciso pedir para receber">é preciso pedir para receber</button></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>
+        Projeto aberto — contribua um verbete em
+        <a href="https://github.com/muanlartins/boca-do-povo" target="_blank" rel="noopener"
+          >github.com/muanlartins/boca-do-povo</a
+        >.
+      </p>
+    </footer>
+
+    <template id="t-card">
+      <article class="card">
+        <header class="card-cabeca">
+          <h2 class="card-expressao"></h2>
+          <span class="card-score" title="Quão próxima a expressão está da sua intenção"></span>
+        </header>
+        <p class="card-intencao"></p>
+        <details class="card-detalhes">
+          <summary>Saber mais</summary>
+          <div class="card-corpo">
+            <div class="campo campo-significado">
+              <h3>Significado</h3>
+              <p></p>
+            </div>
+            <div class="campo campo-origem">
+              <h3>Origem</h3>
+              <p></p>
+            </div>
+            <div class="campo campo-metafora">
+              <h3>Imagem</h3>
+              <p></p>
+            </div>
+            <div class="campo campo-exemplos">
+              <h3>Como se usa</h3>
+              <ul></ul>
+            </div>
+            <div class="campo campo-equivalente">
+              <h3>Em outra língua</h3>
+              <p></p>
+            </div>
+            <div class="campo campo-meta">
+              <span class="meta-registro"></span>
+              <span class="meta-tags"></span>
+              <span class="meta-frequencia"></span>
+            </div>
+          </div>
+        </details>
+      </article>
+    </template>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

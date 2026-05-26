@@ -1,0 +1,22 @@
+{
+  "id": "o-barato-sai-caro",
+  "expressao": "O barato sai caro",
+  "intencao": "Escolher a opção mais barata frequentemente custa mais a longo prazo. Economia mal feita gera prejuízo maior do que o que se economizou.",
+  "significado": "Aviso para quem está comprando ou contratando pelo menor preço sem olhar a qualidade. O dinheiro economizado agora aparece, com juros, no conserto, na substituição ou na consequência.",
+  "origem": "Provérbio popular brasileiro consolidado no século XX, embora a ideia exista há muito mais tempo em várias culturas. Em inglês, 'penny wise, pound foolish' (sábio nos centavos, tolo nas libras) registra a mesma observação desde o século XVII.",
+  "metafora_visual": "Uma furadeira de promoção, comprada por metade do preço. Três meses depois, o motor queima no meio da obra, e o pedreiro cobra a hora parada esperando a furadeira nova chegar.",
+  "exemplos": [
+    "Comprei a passagem mais barata, perdi a conexão e gastei o triplo na nova. O barato sai caro.",
+    "Contratou o pintor pelo menor orçamento e teve que repintar tudo. O barato sai caro.",
+    "Não economize no pneu, não. O barato sai caro."
+  ],
+  "sinonimos": [],
+  "tags": ["nacional", "neutro", "consumo", "prejuizo"],
+  "registro_emocional": "didático e levemente repreensivo",
+  "frequencia_de_uso": "corrente",
+  "equivalente_estrangeiro": {
+    "idioma": "inglês",
+    "expressao": "Penny wise, pound foolish",
+    "traducao_literal": "Sábio nos centavos, tolo nas libras"
+  }
+}

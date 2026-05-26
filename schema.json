@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Verbete",
+  "description": "Um ditado, gíria ou expressão popular brasileira catalogado por intenção",
+  "type": "object",
+  "required": ["id", "expressao", "intencao", "significado"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Slug estável usado no JSON e na URL. Kebab-case sem acento.",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "expressao": {
+      "type": "string",
+      "description": "A expressão como o povo fala. Ex: 'Farinha pouca, meu pirão primeiro'."
+    },
+    "intencao": {
+      "type": "string",
+      "description": "Campo central: o que a pessoa quer dizer ao usar a expressão. Frase descritiva em primeira pessoa ou impessoal. É o que vai gerar o embedding e ser comparado com a query."
+    },
+    "significado": {
+      "type": "string",
+      "description": "Explicação direta do que a expressão significa, em prosa."
+    },
+    "origem": {
+      "type": "string",
+      "description": "História, etimologia ou contexto cultural. Pode incluir região, época, referência literária."
+    },
+    "metafora_visual": {
+      "type": "string",
+      "description": "A imagem mental que a expressão evoca. Ajuda na visualização rica e abre espaço para ilustrações."
+    },
+    "exemplos": {
+      "type": "array",
+      "description": "Frases reais de uso no contexto cotidiano.",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "sinonimos": {
+      "type": "array",
+      "description": "IDs de outros verbetes com intenção similar (mesma família).",
+      "items": { "type": "string" }
+    },
+    "tags": {
+      "type": "array",
+      "description": "Filtros: região (nordeste, sudeste, nacional), formalidade (informal, neutro), tom (irônico, fatalista, pragmático).",
+      "items": { "type": "string" }
+    },
+    "registro_emocional": {
+      "type": "string",
+      "description": "Tom afetivo: irônico, carinhoso, sarcástico, fatalista, autodepreciativo, pragmático, resignado, etc."
+    },
+    "frequencia_de_uso": {
+      "type": "string",
+      "enum": ["corrente", "em_desuso", "arcaico"],
+      "description": "Quão vivo o ditado ainda está na fala popular."
+    },
+    "equivalente_estrangeiro": {
+      "type": "object",
+      "description": "Ditado equivalente em outra língua, quando existir.",
+      "properties": {
+        "idioma": { "type": "string" },
+        "expressao": { "type": "string" },
+        "traducao_literal": { "type": "string" }
+      }
+    }
+  }
+}

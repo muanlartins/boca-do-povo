@@ -1,0 +1,22 @@
+{
+  "id": "a-pressa-e-inimiga-da-perfeicao",
+  "expressao": "A pressa é inimiga da perfeição",
+  "intencao": "Fazer rápido demais costuma comprometer a qualidade. Tempo de execução e qualidade são trade-offs — apressar uma das pontas estraga a outra.",
+  "significado": "Repreende ou alerta quem quer entregar logo, sem o cuidado necessário. Pode ser dito por quem trabalha, ou por quem espera, lembrando que urgência atropela atenção.",
+  "origem": "Provérbio europeu de raízes antigas, comum em várias línguas latinas. Em latim havia 'Festina lente' — 'apresse-se devagar' — atribuído ao imperador Augusto. A versão portuguesa enxergou a relação como inimizade aberta: pressa e perfeição não convivem.",
+  "metafora_visual": "Um relojoeiro com uma lupa no olho, mexendo nas engrenagens com pinça fina. Alguém entra na sala dizendo 'já tá pronto?' e a mão dele treme — uma peça mínima rola pelo chão.",
+  "exemplos": [
+    "Calma, vai com cuidado — a pressa é inimiga da perfeição.",
+    "Quis terminar tudo no domingo à noite e saiu cheio de erro. A pressa é inimiga da perfeição.",
+    "O bolo não cresceu porque você abriu o forno cedo. A pressa é inimiga da perfeição."
+  ],
+  "sinonimos": [],
+  "tags": ["nacional", "neutro", "paciencia", "qualidade"],
+  "registro_emocional": "didático e calmo",
+  "frequencia_de_uso": "corrente",
+  "equivalente_estrangeiro": {
+    "idioma": "latim",
+    "expressao": "Festina lente",
+    "traducao_literal": "Apresse-se devagar"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "cao-que-ladra-nao-morde",
+  "expressao": "Cão que ladra não morde",
+  "intencao": "Quem faz muito barulho ameaçando geralmente não age. A ameaça ruidosa é teatro — quem vai realmente atacar não anuncia.",
+  "significado": "Usado para acalmar quem se intimida com um sujeito agressivo no falar. Também para desqualificar fanfarrices: quanto mais alto a pessoa grita o que vai fazer, menos provável que faça.",
+  "origem": "Observação dos cães de quintal: o cão que pula no portão latindo costuma só latir; o cão perigoso de verdade fica quieto, mede a presa e dá o bote sem aviso. O provérbio existe em quase todas as culturas europeias e africanas, com a mesma figura.",
+  "metafora_visual": "Dois cães. Um pequeno, atrás da grade, latindo ininterruptamente, pulando, espumando. Outro maior, encostado no muro, parado, olhando fixo. O perigoso é o de olhar fixo.",
+  "exemplos": [
+    "Esse chefe grita muito mas não demite ninguém. Cão que ladra não morde.",
+    "Ele jurou que ia processar todo mundo. Já faz três anos — cão que ladra não morde.",
+    "Quanto mais ela ameaça terminar, menos termina. Cão que ladra não morde."
+  ],
+  "sinonimos": [],
+  "tags": ["nacional", "informal", "fanfarra", "ameaca"],
+  "registro_emocional": "tranquilizador e desdenhoso",
+  "frequencia_de_uso": "corrente",
+  "equivalente_estrangeiro": {
+    "idioma": "inglês",
+    "expressao": "Barking dogs seldom bite",
+    "traducao_literal": "Cães que latem raramente mordem"
+  }
+}
