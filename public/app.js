@@ -1,4 +1,4 @@
-import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2/+esm';
+import { pipeline, env } from 'https://esm.sh/@huggingface/transformers@4.2.0';
 
 env.allowLocalModels = false;
 
@@ -97,11 +97,16 @@ const main = async () => {
 
   els.status.textContent = `Preparando a busca (modelo ~50MB, baixa só na primeira vez)…`;
   const embed = await pipeline('feature-extraction', model, {
-    quantized: true,
+    dtype: 'q8',
     progress_callback: (p) => {
-      if (p.status === 'progress' && p.file?.endsWith('onnx')) {
+      if (p.status === 'download' || p.status === 'initiate') {
+        els.status.textContent = `Baixando ${p.file ?? 'recurso'}…`;
+      } else if (p.status === 'progress' && p.file) {
         const pct = Math.round((p.loaded / p.total) * 100);
-        els.status.textContent = `Baixando o modelo de linguagem… ${pct}%`;
+        const mb = (p.loaded / 1024 / 1024).toFixed(1);
+        els.status.textContent = `Baixando ${p.file} — ${pct}% (${mb} MB)`;
+      } else if (p.status === 'done') {
+        els.status.textContent = `Carregado ${p.file ?? ''}, montando o pipeline…`;
       }
     },
   });
