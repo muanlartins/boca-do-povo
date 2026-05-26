@@ -1,0 +1,22 @@
+{
+  "id": "em-casa-de-ferreiro-espeto-de-pau",
+  "expressao": "Em casa de ferreiro, espeto de pau",
+  "intencao": "O especialista de uma área costuma negligenciar exatamente aquilo que domina, dentro da própria casa. Quem mais entende de um assunto raramente aplica essa competência na própria vida.",
+  "significado": "Aplica-se quando alguém percebe ironia entre o ofício de uma pessoa e a falta daquilo justamente onde se esperaria mais. O dentista com cárie, o eletricista com fiação exposta em casa, o programador com computador velho.",
+  "origem": "Provérbio de origem ibérica, registrado em português desde pelo menos o século XVI. O ferreiro trabalhava o dia todo forjando ferramentas de ferro — facas, machados, espetos — mas, exausto, acabava usando em casa um espeto improvisado de madeira para assar a própria carne.",
+  "metafora_visual": "A oficina do ferreiro, escura, cheia de ferro retorcido pendurado nas paredes. À noite, ele acende uma pequena fogueira e enfia a carne num galho de pau qualquer — porque ferro, por mais que sobre na oficina, ele não traz pra dentro.",
+  "exemplos": [
+    "O cara é o melhor cardiologista da cidade, mas fuma um maço por dia. Em casa de ferreiro, espeto de pau.",
+    "A designer mora num apartamento sem nenhuma decoração. Em casa de ferreiro, espeto de pau.",
+    "Sou consultor financeiro e fechei o mês no vermelho. Casa de ferreiro, espeto de pau."
+  ],
+  "sinonimos": [],
+  "tags": ["nacional", "neutro", "ironico", "ofício"],
+  "registro_emocional": "irônico e resignado",
+  "frequencia_de_uso": "corrente",
+  "equivalente_estrangeiro": {
+    "idioma": "inglês",
+    "expressao": "The shoemaker's children go barefoot",
+    "traducao_literal": "Os filhos do sapateiro andam descalços"
+  }
+}
